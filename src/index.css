@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Ensure full background coverage with dark theme */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(17 24 39); /* bg-gray-900 - dark theme */
+  color: rgb(243 244 246); /* text-gray-100 - dark theme */
+}
+
+#root {
+  min-height: 100vh;
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Dark theme form styling */
+input::placeholder,
+textarea::placeholder {
+  color: rgb(156 163 175); /* gray-400 */
+  opacity: 0.7;
+}
+
+/* Select options styling for dark theme */
+select option {
+  background-color: rgb(55 65 81); /* gray-700 */
+  color: rgb(243 244 246); /* gray-100 */
+}
+
+/* Improve focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgb(59 130 246); /* blue-500 */
+  outline-offset: 2px;
+}
+
+/* Button styling */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
